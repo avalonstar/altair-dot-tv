@@ -25,19 +25,18 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          display: `grid`,
+          gridTemplateRows: `1fr auto`,
+          background: `#111`,
+          height: `100vh`,
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer style={{ color: `#333`, padding: `1rem`, textAlign: `center`, fontSize: `12px`, fontWeight: `bold` }}>
+          © {new Date().getFullYear()},{" "}
+          <a href="https://avalonstar.com">Avalonstar Inc.</a>
         </footer>
       </div>
     </>
