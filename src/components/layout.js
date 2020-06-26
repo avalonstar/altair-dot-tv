@@ -1,45 +1,37 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+/** @jsx jsx */
+import { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
+import { Global } from '@emotion/core'
+import { jsx, Box, Flex, Grid, Styled } from 'theme-ui'
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
+import Header from './header'
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
-    <>
-      <div
-        style={{
-          display: `grid`,
-          gridTemplateRows: `1fr auto`,
-          background: `#111`,
-          height: `100vh`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{ color: `#333`, padding: `1rem`, textAlign: `center`, fontSize: `12px`, fontWeight: `bold` }}>
-          © {new Date().getFullYear()},{" "}
+    <Fragment>
+      <Global
+        styles={theme => ({ html: { backgroundColor: theme.background } })}
+      />
+      <Flex sx={{ flexDirection: 'column', height: '100vh', width: '100vw' }}>
+        <Header />
+        <main sx={{ flex: `1 0` }}>{children}</main>
+        <footer
+          sx={{
+            color: `grey.700`,
+            padding: 4,
+            textAlign: `center`,
+            fontSize: `12px`,
+            fontWeight: `bold`,
+
+            'a': { color: 'inherit' }
+          }}
+        >
+          © {new Date().getFullYear()},{' '}
           <a href="https://avalonstar.com">Avalonstar Inc.</a>
         </footer>
-      </div>
-    </>
+      </Flex>
+    </Fragment>
   )
 }
 

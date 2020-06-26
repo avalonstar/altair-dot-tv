@@ -18,7 +18,7 @@ const Image = () => {
     query {
       placeholderImage: file(relativePath: { eq: "altair-icon.png" }) {
         childImageSharp {
-          fixed(width: 128) {
+          fixed(width: 56) {
             base64
             width
             height
