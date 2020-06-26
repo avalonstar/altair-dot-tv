@@ -27,6 +27,11 @@ module.exports = {
         icon: `src/images/altair-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-fathom',
+      options: { siteId: 'HQXRJSSV' },
+      whitelistHostnames: ['altair.tv', 'www.altair.tv'],
+    },
     `gatsby-plugin-theme-ui`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
