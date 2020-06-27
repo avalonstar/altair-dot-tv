@@ -42,9 +42,16 @@ const IndexPage = () => (
               If you believe in us, come support and follow our development.
               We&apos;ll give you a look behind the curtain as we progress.
             </p>
+            <p>
+              Sincerely,
+              <br />
+              <Link href="https://twitter.com/avalonstar">Bryan</Link> (@avalonstar),{' '}
+              <Link href="https://twitter.com/belthesar">Cody</Link> (@belthesar), and Team
+              Altair
+            </p>
           </Text>
           <Box>
-            <Link href="https://twitter.com/altairdottv">
+            <Link variant="links.button" href="https://twitter.com/altairdottv">
               <span role="img" sx={{ pr: 1 }}>
                 🌟
               </span>
@@ -52,7 +59,10 @@ const IndexPage = () => (
             </Link>
           </Box>
           <Box>
-            <Link href="https://givebutter.com/ibelieveinaltair">
+            <Link
+              variant="links.button"
+              href="https://givebutter.com/ibelieveinaltair"
+            >
               <span role="img" sx={{ pr: 1 }}>
                 🌟
               </span>

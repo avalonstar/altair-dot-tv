@@ -123,6 +123,26 @@ export default {
     },
 
     a: {
+      borderBottom: '1px solid',
+      borderColor: 'blue.base',
+      color: 'inherit',
+      textDecoration: 'none',
+      transition: 'all 250ms ease',
+      ':hover': {
+        color: 'blue.base',
+        borderColor: 'blue.200',
+        textDecoration: 'none',
+      },
+    },
+    strong: {
+      fontWeight: 'bold',
+    },
+    em: {
+      fontStyle: 'italic',
+    },
+  },
+  links: {
+    button: {
       display: 'block',
       border: '1px solid',
       borderColor: 'blue.base',
@@ -138,12 +158,6 @@ export default {
         borderColor: 'blue.200',
         textDecoration: 'none',
       },
-    },
-    strong: {
-      fontWeight: 'bold',
-    },
-    em: {
-      fontStyle: 'italic',
     },
   },
 }
