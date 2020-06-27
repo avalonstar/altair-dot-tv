@@ -44,15 +44,20 @@ const IndexPage = () => (
             </p>
           </Text>
           <Box>
-            🌟&nbsp;
             <Link href="https://twitter.com/altairdottv">
+              <span role="img" sx={{ pr: 1 }}>
+                🌟
+              </span>
               Follow <strong>@altairdottv</strong> on Twitter
             </Link>
           </Box>
           <Box>
-            🌟&nbsp;
             <Link href="https://givebutter.com/ibelieveinaltair">
-              Support &ldquo;<em>I believe in Altair</em>&rdquo; on Givebutter
+              <span role="img" sx={{ pr: 1 }}>
+                🌟
+              </span>
+              Support &ldquo;
+              <em>I believe in Altair</em>&rdquo; on Givebutter
             </Link>
           </Box>
         </Box>

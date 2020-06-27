@@ -123,11 +123,16 @@ export default {
     },
 
     a: {
-      borderBottom: '1px solid',
+      display: 'block',
+      border: '1px solid',
       borderColor: 'blue.base',
       color: 'inherit',
       textDecoration: 'none',
       transition: 'all 250ms ease',
+      borderRadius: 3,
+      p: 2,
+      px: 3,
+      mb: 2,
       ':hover': {
         color: 'blue.base',
         borderColor: 'blue.200',

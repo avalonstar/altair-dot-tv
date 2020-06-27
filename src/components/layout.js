@@ -1,9 +1,8 @@
 /** @jsx jsx */
 import { Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
 import { Global } from '@emotion/core'
-import { jsx, Box, Flex, Grid, Styled } from 'theme-ui'
+import { jsx, Flex } from 'theme-ui'
 
 import Header from './header'
 
